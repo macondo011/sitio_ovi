@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Insertar Registro en PHP</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+   <H1>Insertar Registro en PHP</H1>
+   <P>
+        Para nuestro ejemplo hemos creado un formulario en HTML llamado index.php donde por método post o get enviamos datos a un registro llamado crud.php el cual recibe una acción de nuestro formulario y dependiendo del value realizara la acción pertinente para este ejemplo es registrar:
+   </P>
+   
+  <h2>El siguiente codigo nos dara como resultado lo siguiente</h2>
+   <form action="crud.php" method="POST" role="form">
+   <legend>formulario de Ingreso</legend>
+    <div>
+    <table border="1">
+        <tr>
+            <th>Numero de Indentificacion</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Programa Academico</th>
+        </tr>
+        <tr>
+            <th>
+                <input type="text" name="identificacion">
+            </th>
+            <th>
+                <input type="text" name="nombre">
+            </th>
+            <th>
+                <input type="text" name="apellido">
+            </th>
+            <th>
+                <input type="number" name="edad">
+            </th>
+            <th>
+                <input type="text" name="programa">
+            </th>
+            <th>
+                <input type="hidden" name="accion" value="registrar">
+                <input type="submit" value="Registrar">
+            </th>
+        </tr>
+    </table>
+</form>
+<h2>Este es el codigo fuente</h2>
+    <pre>
+   &ltform action="crud.php" method="POST" role="form"&gt
+   &ltlegend&gtformulario de Ingreso&lt/legend&gt
+    &ltdiv&gt
+    &lttable border="1"&gt
+        &lttr&gt
+            &ltth&gtNumero de Indentificacion&lt/th&gt
+            &ltth&gtNombre&lt/th&gt
+            &ltth&gtApellido&lt/th&gt
+            &ltth&gtEdad&lt/th&gt
+            &ltth&gtPrograma Academico&lt/th&gt
+        &lt/tr&gt
+        &lttr&gt
+            &ltth&gt
+                &ltinput type="text" name="identificacion"&gt
+            &lt/th&gt
+            &ltth&gt
+                &ltinput type="text" name="nombre"&gt
+            &lt/th&gt
+            &ltth&gt
+                &ltinput type="text" name="apellido"&gt
+            &lt/th&gt
+            &ltth&gt
+                &ltinput type="number" name="edad"&gt
+            &lt/th&gt
+            &ltth&gt
+                &ltinput type="text" name="programa"&gt
+            &lt/th&gt
+            &ltth&gt
+                &ltinput type="hidden" name="accion" value="registrar"&gt
+                &ltinput type="submit" value="Registrar"&gt
+            &lt/th&gt
+        &lt/tr&gt
+    &lt/table&gt
+&lt/form&gt
+
+    </pre>
+
+
+  
+    
+</body>
+</html>

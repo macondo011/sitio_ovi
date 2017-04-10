@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eliminar Registros PHP</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+   <h1>Eliminar Un Registro</h1>
+    <p>
+        Para eliminar un registro en la consulta tenemos la línea de eliminación que envía dos parámetros al crud.php
+    </p>
+    <pre>
+        
+    &lth1 align="left"&gt Registro de Estudiantes&lt/h1&gt
+    &lttable border="2"&gt
+
+        &ltthead&gt
+        &lttr&gt
+            &ltth&gtNumero de Indentificacion&lt/th&gt
+            &ltth&gtNombre&lt/th&gt
+            &ltth&gtApellido&lt/th&gt
+            &ltth&gtEdad&lt/th&gt
+            &ltth&gtPrograma Academico&lt/th&gt
+        &lt/tr&gt
+        &lt/thead&gt
+        &lttbody&gt
+        &lt?php
+        include("conexion.php");
+        $res=$cnx-&gtquery("select * from tbl_datos");
+        foreach ($res as $row){
+        ?&gt
+        &lttr&gt
+            &lttd&gt &lt?php echo $row[0]?&gt&lt/td&gt
+            &lttd&gt &lt?php echo $row[1]?&gt&lt/td&gt
+            &lttd&gt &lt?php echo $row[2]?&gt&lt/td&gt
+            &lttd&gt &lt?php echo $row[3]?&gt&lt/td&gt
+            &lttd&gt &lt?php echo $row[4]?&gt&lt/td&gt
+            &lttd&gt&lta href="actualizar.php?id=&lt?php echo $row[0] ?&gt"&gtActualizar&lt/a&gt || &lta href="crud.php?accion=eliminar&identificacion=&lt?php echo $row[0]?&gt"&gtEliminar&lt/a&gt&lt/td&gt
+        &lt/tr&gt
+    &lt/table&gt
+    &lt?php } ?&gt
+
+        &lt/tbody&gt
+
+    </pre>
+</body>
+</html>

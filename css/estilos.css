@@ -1,0 +1,155 @@
+/*estilo de cabecera*/
+
+#cabecera{
+        position: relative;
+        width: 100%; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+        border: 3px;
+    
+    }
+
+    .sobre{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border: none;
+    }
+    
+
+    #menu{
+        margin-left: auto;
+        margin:0px;
+        margin-top: 0px;
+        width: 100%;
+        font-family:sans-serif;
+    }
+
+  
+/*estilo de menu*/
+
+/*estilo de menu General*/
+nav ul{
+    list-style: none;
+    padding: 0;
+    float: left;
+    margin: 0px;
+    
+}
+
+nav li{
+    line-height: 3rem;
+    position: relative;
+    position: relative;
+}
+
+nav li ul{
+    position: absolute;
+}
+a{
+    color: white;
+    display: block;
+    padding: 0 2.4em;
+    text-decoration: none;
+    transition: .4s;
+}
+
+a:hover{
+    background-color: #0D6392;
+}
+nav li ul{
+    display:none;
+}
+nav li:hover ul{
+    display: block;
+}
+nav ul ul ul{
+    display: none;
+}
+
+/*estilo de menu Item*/
+
+nav ul{
+    background-color: #083A59;
+    display: table;
+    width: 100%;
+}
+nav ul >li{
+    float: left;
+}
+
+/*estilo de menu SubItem*/
+
+nav li li{
+    
+}
+
+/*estilo de menu SubItem2*/
+
+
+
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+   
+    min-height: 100vh;
+    
+}
+
+
+#articulos{
+    border: 1;
+    width: 60%;
+    height: 400px;   
+    margin-left: 10px;
+    text-align: left;
+    padding-top: 0;
+}
+#articulos{
+    border: 1;
+     width: 80%;
+    height: 400px;   
+    margin-left: 10px;
+    text-align: left;
+    text-align: justify
+    padding-top: 0;
+}
+#columaizq{
+     border: 1;
+    width: 50%;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+/*estilo de footer*/
+
+footer{
+    background-color: #083A59;
+    height: 100px;
+    bottom: auto;
+    width: 100%;
+    text-align: left;
+    clear: both;
+    color: white;
+   padding-left: 10px;
+}
+
+/*estilo de iframe*/
+iframe{
+    max-width: 100%;
+    height: auto;
+}
+
+pre {
+  background-color:#F1F1F1;
+  border:1px solid #00000;
+  padding:10px;
+  overflow:auto
+  margin:7px;
+  color:#0150c7;
+  
+}
